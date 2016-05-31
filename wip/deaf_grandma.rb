@@ -10,12 +10,15 @@ loop do
 	question = gets.chomp
 	question_count +=1
 
-	case
-	when # question is not all caps
-		puts "WHAT'S THAT, SONNY?"
+	case question.upcase
+	when "GOODBYE GRANDMA"
+		puts "Grandma: OK. GOODBYE, SONNY."
 		break
-	when #question is all caps
-		puts "NO DEAR, NOT SINCE 1928."
+	when question
+		puts "Grandma: NO DEAR, NOT SINCE 1928."
+		break
+	else 
+		puts "Grandma: WHAT'S THAT, SONNY?"
 		break
 	next
 	end
